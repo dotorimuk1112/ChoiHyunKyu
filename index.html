@@ -180,6 +180,24 @@
             margin-bottom: 20px;
             font-size: 2.3em;
         }
+
+        .experience-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.7em;
+        }
+
+        .experience-section p {
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+        
+        .skills-section {
+            text-align: center;
+        }
+        .skills-section h1 {
+            margin-bottom: 20px;
+            font-size: 2.3em;
+        }
     
         .experience-card-container {
             display: flex;
@@ -370,6 +388,9 @@
         .projects-section h3 {
             font-size: 1.5em; /* Projects 섹션의 h1 글씨 크기 조정 */
         }
+        .projects-section h4 {
+            font-size: 1.3em; /* Projects 섹션의 h1 글씨 크기 조정 */
+        }
         .projects-section p {
             font-size: 1em; /* Projects 섹션의 h1 글씨 크기 조정 */
         }
@@ -484,8 +505,13 @@
             font-size: 2rem; /* 아이콘 크기를 조정 */
         }
         
-        footer p, footer h3 {
+        footer p {
             margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+
+        footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+            font-size: 1.7em; /* 아이콘 크기를 조정 */
         }
         
         footer .mt-3 {
@@ -512,8 +538,46 @@
         
         footer p, footer h3 {
             margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+            text-align: center;
+        }
+
+        /* 각 목록 항목에 대해 새로운 글머리 기호 스타일을 추가 */
+        ul.custom-list > li:before {
+            content: '•'; /* 글머리 기호로 사용할 문자 */
+            color: black; /* 글머리 기호의 색상 */
+            display: inline-block; 
+            width: 1em; /* 글머리 기호의 가로 크기 */
+            margin-left: -1em; /* 글머리 기호의 위치 조정 */
+        }
+
+        ul.sub-list > li:before {
+            color: black; /* 서브 글머리 기호의 색상 */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer .btn {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .email-copy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* 이메일 주소와 버튼 사이의 간격 */
         }
         
+        .email-copy p {
+            margin: 0;
+        }
+
+        #copy-button {
+            padding: 2px 6px; /* 버튼 크기 조정 */
+            font-size: 0.9rem; /* 버튼 텍스트 크기 조정 */
+            margin-bottom: 8px;
+        }
         
         @media (max-width: 768px) {
             footer p, footer h3 {
@@ -531,7 +595,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container px-4">
-            <a class="navbar-brand" href="#page-top">Pyhon Specialist, 최현규입니다.</a>
+            <a class="navbar-brand" href="#page-top">Python Specialist, 최현규입니다.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
@@ -551,7 +615,7 @@
             <div class="card-right">
                 <h1 class="fw-bolder">안녕하세요, 최현규입니다.</h1>
                 <p class="lead">
-                    Python 개발자로서 다양한 기술 스택과 프로젝트 경험을 보유하고 있습니다. <br>
+                    Python 개발자로서 다양한 기술 스택과 다수의 프로젝트 경험을 보유하고 있습니다. <br>
                     <span class="highlight">AI, 데이터 파이프라인 구축 및 분석, 웹 개발 </span> 등 다양한 분야에서 활약할 수 있습니다.
                 </p>
                 <ul class="custom-list">
@@ -574,7 +638,7 @@
     </section>
 
     <section id="Skills" class="section-light-gray">
-        <div class="section">
+        <div class="skills-section">
             <h1>Skills</h1>
             <div class="skills">
                 <div class="skill-item">
@@ -625,7 +689,7 @@
                 </div>
                 <div class="skill-item">
                     <img src="assets/icons/scikit-learn.png" alt="Scikit-learn">
-                    <p>Scikit-learn</p>
+                    <p style="font-size: 0.8em; width: 90.1px; height: 35.99px; text-align: center; line-height: 35.99px;">Scikit-learn</p>
                 </div>
                 <div class="skill-item">
                     <img src="assets/icons/pytorch.png" alt="Pytorch">
@@ -657,17 +721,17 @@
                 <ul>
                     <li>데이터 분석, 전처리, 대시보드 제작(Pandas, Superset 등)</li>
                     <li>쿼리를 통한 데이터 추출 및 분석</li>
-                    <li>웹 서버 개발(Django, Flask, Spring)</li>
+                    <li>백엔드 개발(Django, Flask, Spring)</li>
                     <li>Docker 소프트웨어 패키징</li>
                     <li>AWS(EC2, RDS, S3)</li>
                     <li>Streamlit 대시보드 개발</li>
-                    <li>BeautifulSoup 활용, 웹 크롤링</li>
-                    <li>Airflow 활용, 코드 자동화</li>
+                    <li>BeautifulSoup 웹 크롤링</li>
+                    <li>Airflow 활용 데이터 파이프라인 구축 및 코드 자동화</li>
                     <li>Scikit-learn, Tensorflow, Pytorch 활용</li>
-                    <li>CUDA 환경 설정 및 활용</li>
+                    <li>CUDA 환경 설정</li>
                     <li>리눅스(Ubuntu) 환경 개발</li>
-                    <li>ELK 스택 등 NoSQL, 데이터 활용 능력</li>
-                    <li>Github & CI/CD(Jenkins)</li>
+                    <li>ELK 스택 등 NoSQL 데이터 활용 능력</li>
+                    <li>형상 관리 & 지속적 통합/배포(Github & Jenkins)</li>
                 </ul>
             </div>
         </div>
@@ -683,8 +747,7 @@
                     <div class="experience-content">
                         <h2>우리FISA AI엔지니어링 과정</h2>
                         <p>2023.11 - 2024.05</p>
-                        <p>AI 엔지니어로서의 주요 기술 스택을 학습했습니다.</p>
-                        <p>다양한 기술 스택을 실습과 프로젝트를 통해 체화했습니다.</p>
+                        <p>AI 엔지니어로서의 주요 기술 스택을 학습했습니다. <br> 다양한 기술 스택을 실습과 프로젝트를 통해 체화했습니다.</p>
                     </div>
                 </div>
                 <div class="experience-card">
@@ -703,7 +766,7 @@
     <section id="Projects" class="section-light-gray">
         <div class="projects-section">
             <h1>Projects</h1>
-            <h3 class="sub-header">🌐Backend & Data pipeline & Data analysis</h3>
+            <h3 class="sub-header">🌐Back-end & Data pipeline & Data analysis</h3>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -713,7 +776,7 @@
                             </div>
                             <div class="project-body">
                                 <div class="project-content">
-                                    <p>정보불균형 해소, 판매/구매자 의사 결정을 돕는 AI 모델이 다수 탑재된 중고차 거래 플랫폼입니다.</p>
+                                    <p>정보불균형 해소, 판매/구매자 의사 결정을 돕는 AI 모델이 다수 탑재된 중고차 <br> 거래 플랫폼입니다.</p>
                                     <p>Django 백엔드 서버 개발, 3종의 AI 모델 구축, 4종의 주요 기능 개발에 기여했습니다.</p>
                                     <a class="btn btn-primary" href="projects/ourcar.html">자세히 보기</a>
                                 </div>
@@ -731,8 +794,8 @@
                             </div>
                             <div class="project-body">
                                 <div class="project-content">
-                                    <p>ETL 프로세스를 학습하고자 수행한 프로젝트입니다.</p>
-                                    <p>YES24의 베스트셀러 데이터를 <br> 크롤링하고 변환, 적재하여 <br> Superset으로 시각화합니다.</p>
+                                    <p>ETL 프로세스를 학습하고자 수행한 <br>프로젝트입니다.</p>
+                                    <p>YES24의 베스트셀러 데이터를 <br> 크롤링하고 변환 · 적재하여 <br> Superset으로 시각화합니다.</p>
                                     <p>Airflow를 활용해 <br>모든 프로세스를 자동화했습니다.</p>
                                     <a class="btn btn-primary" href="projects/ETL.html">자세히 보기</a>
                                 </div>
@@ -766,7 +829,7 @@
                             </div>
                             <div class="project-body">
                                 <div class="project-content">
-                                    <p>ElasticSearch에 게임 재화 사용 <br> 내역을 저장하고 실제 확률을 <br> 기반으로 성공 횟수가 기댓값보다 <br>높은지 낮은지를 분석해주는 <br> 서비스입니다.</p>
+                                    <p>ElasticSearch에 실제 게임 재화 사용 <br> 내역을 저장하고 실제 확률을 <br> 기반으로 성공 횟수가 기댓값보다 <br>높은지 낮은지를 분석해주는 <br> 서비스입니다.</p>
                                     <p>Nexon OpenAPI 호출, ElasticSearch 연동, Streamlit 대시보드를 개발했습니다.</p>
                                     <a class="btn btn-primary" href="projects/ELK_Streamlit.html">자세히 보기</a>
                                 </div>
@@ -804,7 +867,7 @@
                     <div class="col-md-6">
                         <div class="project-card">
                             <div class="project-header">
-                                <h3>🌩차량 파손 탐지 모델</h3>
+                                <h3>💥차량 파손 탐지 모델</h3>
                             </div>
                             <div class="project-body">
                                 <div class="project-content">
@@ -844,26 +907,25 @@
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <div class="container text-center ">
-                        <h3 class="m-0 text-white" style="text-align: center;">Contact Me</h3>
-                    </div>
-                    <div class="container text-center">
-                        <p class="m-0 text-white" style="text-align: center;">E-mail: chhyky12@gmail.com</p>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div>
+                    <h3 class="m-0 text-white" style="text-align: center;">Contact Me</h3>
                 </div>
-                <div class="col-md-3">
-                    <div class="mt-3">
-                        <a href="https://github.com/dotorimuk1112" target="_blank">
-                            <i class="fab fa-github fa-2x text-white mx-3"></i>
-                        </a>
-                        <a href="mailto:chhyky12@gmail.com" target="_blank">
-                            <i class="fas fa-envelope fa-2x text-white mx-3"></i>
-                        </a>
-                    </div>
+                <div class="email-copy">
+                    <p class="m-0 text-white" style="display: inline-block;">E-mail: chhyky12@gmail.com</p>
+                    <button id="copy-button" class="btn btn-outline-light btn-sm">주소 복사</button>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/dotorimuk1112" target="_blank">
+                        <i class="fab fa-github fa-2x text-white mx-3"></i>
+                    </a>
+                    <a href="mailto:chhyky12@gmail.com" target="_blank">
+                        <i class="fas fa-envelope fa-2x text-white mx-3"></i>
+                    </a>
                 </div>
             </div>
+        </div>
     </footer>
 
 
@@ -873,7 +935,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Core theme JS -->
-    <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('copy-button').addEventListener('click', function() {
+            const email = 'chhyky12@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('이메일 주소가 복사되었습니다.');
+            }).catch(err => {
+                alert('클립보드 복사에 실패했습니다. ' + err);
+            });
+        });
+    </script>
 </body>
 
 </html>
