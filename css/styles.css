@@ -11797,3 +11797,10 @@ body {
   margin: 0;
   padding: 0;
 } */
+
+
+.project-images img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: 0px;
+}
