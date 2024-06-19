@@ -83,6 +83,7 @@
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 15px;
+            min-width: 1200px;
         }
 
         .card-left img {
@@ -94,6 +95,11 @@
 
         .card-right {
             margin-left: 20px;
+            max-width: 100%;
+            width: 80%; /* 필요한 만큼 너비를 조정 */
+            max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+            margin: 0 auto; /* 가운데 정렬 */
+            padding: 20px; /* 내부 여백 */
         }
 
         .section {
@@ -141,6 +147,10 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
+        .experience-header h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
         .project-body {
             display: flex;
@@ -166,11 +176,33 @@
         .sub-list {
             list-style-type: none;
             padding-left: 0;
+            margin-top: 0px; /* 필요한 만큼 줄임 */
+            margin-bottom: 0; /* 하단 여백을 줄임 */
         }
 
         .custom-list>li {
             margin-bottom: 10px;
         }
+
+        .large-font {
+            font-size: 1.2em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        .large-font2 {
+            font-size: 1.5em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        .large-font3 {
+            font-size: 1.3em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        
 
         .sub-list>li {
             margin-left: 20px;
@@ -228,6 +260,9 @@
     
         .experience-content {
             text-align: left;
+        }
+        .experience-content h2{
+            margin-bottom: 0%;
         }
         .projects-section {
             text-align: center;
@@ -602,6 +637,24 @@
         .introduce h3, h5{
             text-align: center;
         }
+        .lead p {
+            text-align: left;
+            font-size: 1.5em;
+        }
+
+        .card-right {
+            flex-grow: 1; /* 플렉스 컨테이너 내에서 자라도록 설정 */
+            width: 100%; /* 필요한 만큼 너비를 조정 */
+            min-width: 850px;
+            max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+            margin: 0 auto; /* 가운데 정렬 */
+            padding: 20px; /* 내부 여백 */
+        }
+
+        .fw-bolder {
+            font-weight: bolder;
+        }
+        
     </style>
 </head>
 
@@ -628,26 +681,24 @@
             </div>
             <div class="card-right">
                 <h1 class="fw-bolder">안녕하세요, 최현규입니다.</h1>
-                <p class="lead">
+                <p class="large-font3">
                     Python 개발자로서 다양한 기술 스택과 다수의 프로젝트 경험을 보유하고 있습니다. <br>
-                    <span class="highlight">AI, 데이터 파이프라인 구축 및 분석, 웹 개발 </span> 등 다양한 분야에서 활약할 수 있습니다.
+                    <span class="highlight">AI, 데이터 파이프라인 구축 및 분석, 웹 개발</span> 등 다양한 분야에서 활약할 수 있습니다.
                 </p>
                 <ul class="custom-list">
-                    <li>학 력
-                        <ul class="sub-list">
-                            <li>정치외교학과 전공</li>
-                            <li>AI빅데이터융합경영학 부전공</li>
-                        </ul>
-                    </li>
-                    <li>보유 자격증
-                        <ul class="sub-list">
-                            <li>정보처리기사(2024/06)</li>
-                            <li>SQLD(2024/04)</li>
-                            <li>ADsP(2023/06)</li>
-                            <li>TOEIC Speaking Test IM2(2024/03)</li>
-                            <li>MOS Excel Expert(2017/04)</li>
-                        </ul>
-                    </li>
+                    <p class="large-font2">학 력</p>
+                    <ul class="sub-list reduced-margin">
+                        <li>정치외교학과 전공</li>
+                        <li>AI빅데이터융합경영학 부전공</li>
+                    </ul>
+                    <p class="large-font">보유 자격증</p>
+                    <ul class="sub-list">
+                        <li>정보처리기사(2024/06)</li>
+                        <li>SQLD(2024/04)</li>
+                        <li>ADsP(2023/06)</li>
+                        <li>TOEIC Speaking Test IM2(2024/03)</li>
+                        <li>MOS Excel Expert(2017/04)</li>
+                    </ul>
                 </ul>
             </div>
         </div>
@@ -656,6 +707,12 @@
     <section id="Skills" class="section-light-gray">
         <div class="skills-section">
             <h1>Skills</h1>
+            <div class="introduce">
+                <h3>
+                    AI 모델링, AI 모델을 탑재한 웹 서비스 개발에 특화되어 있습니다.<br>
+                    데이터 전처리부터 소프트웨어 패키징 및 배포까지, 파이프라인 전반에 걸쳐 필요한 기술을 모두 보유중입니다.
+                </h3>
+            </div>
             <div class="skills">
                 <div class="skill-item">
                     <img src="assets/icons/python.png" alt="Python">
@@ -732,12 +789,6 @@
                     <p>Airflow</p>
                 </div>
             </div>
-            <div class="introduce">
-                <h3>
-                    AI 모델링, AI 모델을 탑재한 웹 서비스 개발에 특화되어 있습니다.<br>
-                    데이터 준비부터 소프트웨어 패키징 및 배포까지, 파이프라인 전반에 걸쳐 필요한 기술을 모두 보유중입니다.
-                </h3>
-            </div>
         </div>
     </section>
 
@@ -752,11 +803,10 @@
                         <h2>우리FISA AI엔지니어링 과정</h2>
                         <p>2023.11 - 2024.05</p>
                         <p>AI 엔지니어로서의 주요 기술 스택을 학습했습니다. <br> 다양한 기술 스택을 프로젝트를 통해 체화했습니다.</p>
-                        <ul style="color: darkblue;"> [주요 프로젝트]
-                            <li style="color: dodgerblue;"><아워카> 프로젝트</li>
+                        <p class="large-font" style="color: darkblue;">[주요 프로젝트]</p>    
+                        <li style="color: dodgerblue;"><아워카> 프로젝트</li>
                             <li style="color: dodgerblue;">YES24 베스트셀러 데이터 ETL 프로세스</li>
                             <li style="color: dodgerblue;">How Was Your Luck?(ELK-Streamlit)</li>
-                        </ul>
                     </div>
                 </div>
                 <div class="experience-card">
@@ -765,11 +815,10 @@
                         <h2>대한민국 육군, 장교</h2>
                         <p>2021.03 - 2023.06</p>
                         <p>육군 장교로서 2년 4개월 간 복무하며 <br> 조직 적응력, 소통능력, 업무 처리 능력을 길렀습니다.</p>
-                        <ul style="color: darkblue;">[주요 업무]
+                        <p class="large-font" style="color: darkblue;">[주요 업무]</p>
                             <li style="color: dodgerblue;">지휘관 보좌</li>
                             <li style="color: dodgerblue;">부대 홍보 업무</li>
                             <li style="color: dodgerblue;">언론 응대 업무</li>
-                        </ul>
                     </div>
                 </div>
             </div>
