@@ -11808,3 +11808,645 @@ body {
 .reduced-margin {
   margin-bottom: 0;
 }
+
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  width: 800px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.highlight {
+  color: steelblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  p {
+      font-size: 1em;
+  }
+}
+
+.hero-section {
+  background-image: url('assets/background_img.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+.hero-section h1 {
+  font-size: 2em;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 1200px;
+}
+
+.card-left img {
+  border-radius: 50%;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-right {
+  margin-left: 20px;
+  max-width: 100%;
+  width: 80%; /* 필요한 만큼 너비를 조정 */
+  max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 20px; /* 내부 여백 */
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  flex-basis: 10%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.experience-card img {
+  max-width: 150px;
+  min-height: 190px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.project-header h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.experience-header h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-content {
+  flex-basis: 60%;
+}
+
+.project-images {
+  flex-basis: 35%;
+  text-align: center;
+}
+
+.project-images img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.custom-list,
+.sub-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0px; /* 필요한 만큼 줄임 */
+  margin-bottom: 0; /* 하단 여백을 줄임 */
+}
+
+.custom-list>li {
+  margin-bottom: 10px;
+}
+
+.large-font {
+  font-size: 1.2em;
+  font-family: "Do Hyeon", sans-serif;
+  color: #000000;
+  margin-bottom: 2px; /* 필요한 만큼 줄임 */
+}
+.large-font2 {
+  font-size: 1.5em;
+  font-family: "Do Hyeon", sans-serif;
+  color: #000000;
+  margin-bottom: 2px; /* 필요한 만큼 줄임 */
+}
+.large-font3 {
+  font-size: 1.3em;
+  font-family: "Do Hyeon", sans-serif;
+  color: #000000;
+  margin-bottom: 2px; /* 필요한 만큼 줄임 */
+}
+
+
+.sub-list>li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+.experience-section {
+  text-align: center;
+}
+
+.experience-section h1 {
+  margin-bottom: 20px;
+  font-size: 2.3em;
+}
+
+.experience-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+.experience-section p {
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.skills-section {
+  text-align: center;
+}
+.skills-section h1 {
+  margin-bottom: 20px;
+  font-size: 2.3em;
+}
+
+.experience-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience-card {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 90%;
+  max-width: 600px;
+}
+
+.experience-card img {
+  border-radius: 10px;
+  margin-right: 20px;
+  min-height: 190px;
+}
+
+.experience-content {
+  text-align: left;
+}
+.experience-content h2{
+  margin-bottom: 0%;
+}
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h1 {
+  margin-bottom: 20px;
+}
+
+.projects-section .sub-header {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.projects-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 90%;
+  max-width: 600px;
+}
+
+.project-card img {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.project-content {
+  text-align: left;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+}
+
+.project-card img {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-images img {
+  width: 100%; /* 이미지 크기를 조절합니다 */
+  max-height: 200px; /* 최대 높이를 설정합니다 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+}
+
+.project-content {
+  text-align: left;
+}
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h1 {
+  margin-bottom: 20px;
+}
+
+.projects-section .sub-header {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+}
+
+.project-card img {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-images img {
+  width: 100%; /* 이미지 크기를 조절합니다 */
+  max-height: 300px; /* 최대 높이를 설정합니다 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+}
+
+.project-content {
+  text-align: left;
+}
+
+/* 카드 너비 조정 */
+.col-md-6 {
+  max-width: 48%; /* 카드 간격을 유지하기 위해 48%로 설정 */
+  margin: 1%;
+}
+.projects-section {
+  text-align: center;
+  margin-top: 50px; /* 여백 추가 */
+}
+
+.projects-section h1 {
+  margin-bottom: 20px;
+}
+
+.projects-section .sub-header {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  min-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+}
+
+.project-card img {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-images img {
+  width: 100%; /* 이미지 크기를 조절합니다 */
+  max-height: 400px; /* 최대 높이를 설정합니다 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+}
+
+.project-content {
+  text-align: left;
+}
+
+/* 카드 너비 조정 */
+.col-md-6 {
+  max-width: 48%; /* 카드 간격을 유지하기 위해 48%로 설정 */
+  margin: 1%;
+}
+
+.projects-section h1 {
+  font-size: 2.3em; /* Projects 섹션의 h1 글씨 크기 조정 */
+}
+.projects-section h3 {
+  font-size: 1.5em; /* Projects 섹션의 h1 글씨 크기 조정 */
+}
+.projects-section h4 {
+  font-size: 1.3em; /* Projects 섹션의 h1 글씨 크기 조정 */
+}
+.projects-section p {
+  font-size: 1em; /* Projects 섹션의 h1 글씨 크기 조정 */
+}
+.hero-section .card-right {
+  color: black; /* Hero section의 텍스트 색상을 검정으로 변경 */
+}
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+
+footer .d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* 아이콘과 텍스트를 세로로 정렬 */
+}
+
+footer .d-flex a {
+  margin: 10px; /* 아이콘 간 간격 조정 */
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+
+footer .mt-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* 아이콘과 텍스트 사이 간격 조정 */
+}
+
+footer .mt-3 a {
+  margin: 0 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+}
+
+footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+  font-size: 1.7em; /* 아이콘 크기를 조정 */
+}
+
+footer .mt-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* 아이콘과 텍스트 사이 간격 조정 */
+}
+
+footer .mt-3 a {
+  margin: 0 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 2rem; /* 아이콘 크기를 조정 */
+}
+
+footer p, footer h3 {
+  margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+  text-align: center;
+}
+
+/* 각 목록 항목에 대해 새로운 글머리 기호 스타일을 추가 */
+ul.custom-list > li:before {
+  content: '•'; /* 글머리 기호로 사용할 문자 */
+  color: black; /* 글머리 기호의 색상 */
+  display: inline-block; 
+  width: 1em; /* 글머리 기호의 가로 크기 */
+  margin-left: -1em; /* 글머리 기호의 위치 조정 */
+}
+
+ul.sub-list > li:before {
+  color: black; /* 서브 글머리 기호의 색상 */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.email-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* 이메일 주소와 버튼 사이의 간격 */
+}
+
+.email-copy p {
+  margin: 0;
+}
+
+#copy-button {
+  padding: 2px 6px; /* 버튼 크기 조정 */
+  font-size: 0.9rem; /* 버튼 텍스트 크기 조정 */
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  footer p, footer h3 {
+      margin-bottom: 20px; /* 모바일에서의 텍스트 간 간격 조정 */
+  }
+
+  footer a {
+      margin: 10px; /* 모바일에서의 아이콘 간 간격 조정 */
+  }
+}
+
+.introduce {
+  width: auto; /* 또는 width: 100%; */
+  max-width: 100%; /* 부모 컨테이너를 넘지 않도록 설정 */
+  text-align: center;
+}
+.introduce h3, h5{
+  text-align: center;
+}
+.lead p {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.card-right {
+  flex-grow: 1; /* 플렉스 컨테이너 내에서 자라도록 설정 */
+  width: 100%; /* 필요한 만큼 너비를 조정 */
+  min-width: 850px;
+  max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 20px; /* 내부 여백 */
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
